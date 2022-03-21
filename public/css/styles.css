@@ -4,18 +4,18 @@ body {
 	margin: -25px auto !important; 
 	float: none !important; 
 }
-
 .top-header{
   background: white url(../img/bg-header.png) center no-repeat;
 }
 .logo img{
-  top: 22px;
-  width: 235px;
-  height: 210px;
-  position: relative;
+  top: 36px;
+    width: 204px;
+    height: 198px;
+    position: relative;
+    left: 27px;
 }
 .top-header{
-    padding-bottom: 35px;
+    padding: 35px;
     display: flex;
 }
 .name-company img{
@@ -38,7 +38,7 @@ form.example {
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding: 20px 41px;
+  padding: 20px 24px;
     border: 5px solid  #6c757d;
     text-align: center;
     
@@ -89,7 +89,7 @@ input[type="text"]{
   top: 68px;
   border: 2px solid grey;
   padding: 0 10px;
-  margin: 52px 11px 120px 5px;
+  margin: 33px 14px 100px 23px;
 }
 
 /* categories */
@@ -189,13 +189,14 @@ nav.navbar.navbar-expand-lg.bg-categories {
   border: 3px solid #38699f;
 }
 .address{
+  display: flex;
   padding-top: 5px;
   line-height: 25px;
 }
 
 /* Owl carousel */
 
-.fsale img{
+.slider img{
   object-fit: fill;
   height: 600px;
 }
@@ -249,12 +250,57 @@ button.owl-prev {
 }
 /* srcoll */
 
-.contact {
+.internet {
   position: fixed;
   top: 80%;
   left: 50px;
 }
-.contact img{
+.internet img{
   width: 60px;
   height: 60px;
+}
+/* footer */
+footer {
+  background: url('../img/footer.png') bottom no-repeat;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;  
+ } 
+.copyright{
+  color: white;
+  background: #00a850;
+}
+.contact {
+  display: flex;
+}
+footer .name-company img{
+  padding: 0;
+  left: 40px;
+  bottom: 10px;
+  width: 201px;
+  height: 175px;
+  position: relative;
+}
+.policy li{
+  list-style: none;
+  line-height: 35px;
+}
+.policy a{
+  color: white;
+  text-decoration: none;
+}
+
+.policy h1{
+  padding-left: 30px;
+}
+.policy a:hover{
+  color: #ffce2b;
+}
+
+footer ul{
+  padding-top: 30px;
+  line-height: 22px;
+}
+.link1 img {
+  padding: 30px 30px 30px 0; 
 }
