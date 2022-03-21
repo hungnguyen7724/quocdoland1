@@ -1,309 +1,438 @@
-body { 
-	max-width: 1300px; 
-  height: 1366px;
-	margin: -25px auto !important; 
-	float: none !important; 
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.top-header{
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quoc Do Land</title>.
 
-  background: white url(../img/bg-header.png) center no-repeat;
-}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-.logo img{
-  top: 36px;
-    width: 204px;
-    height: 198px;
-    position: relative;
-    left: 27px;
-}
-.top-header{
-    padding: 35px;
-    display: flex;
-}
-.name-company img{
-  padding-left: 60px;
-    text-align: center;
-}
-form.example {
-    display: contents;
-}
-.border-search .dropdown{
-  display: flex;
-  margin: 15px  0;
-}
-#dropdownMenuButton1{
-  margin-right: 24px;
-}
-.border-search{
-  background-color: #ffce2b;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 20px 24px;
-    border: 5px solid  #6c757d;
-    text-align: center;
-    
-}
-.top-header li{
-    list-style: none;
-}
-.top-header a{
-    font-size: 22px;
-    text-decoration: none;
-    color: black;
-}
-div#navbarNav, .bg-categories  {
-  background: #ffce2b;
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-.dropdown {
-  display: flex;
-}
-#trangchu, #mua-bds, #ban-bds, #thue-bds, #duan, #tuyendung, #lienhe{
-  font-size: 16px;
-  padding: 14px 5px;
-  text-align: center;
-}
-#trangchu:hover, #mua-bds:hover, #ban-bds:hover, #thue-bds:hover, #duan:hover, #tuyendung:hover, #lienhe:hover{
-  color: rgb(238, 23, 41);
-}
+    <link rel="stylesheet" href="./public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./public/css/owl.theme.default.min.css">
 
-.categories #lienhe{
-  border-right: none;
-}
-input[type="text"]{
-  font-size: 16px;
-  padding: 6px 0px;
 
-}
-.example button{
-  padding: 6px 8px;
-  border-radius: 5px;
-}
-.service {
-  text-align: center;
-  display: flex;
-}
+    <link rel="stylesheet" href="./public/css/styles.css">
 
-.introduce, .bank, .news {
-  position: relative;
-  top: 68px;
-  border: 2px solid grey;
-  padding: 0 10px;
-  margin: 33px 14px 100px 23px;
-}
+</head>
 
-/* categories */
-.bg-categories a{
-  color: black;
-  text-decoration: none;
-  background: #ffce2b;
-  padding: 10px;
-    font-size: 25px;
-}
-.bg-categories a:hover {
-  color: grey;
+<head>
+    <div id="move_top"></div>
 
-}
-a.nav-link.active,a.nav-link {
-    margin: 0 25px;
-}
-/* Bds ban */
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="./public/img/logo-land.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
 
-.sell-bds .container{
-  background: #f9f9f9;
-}
-.sell-bds h1{
-  text-transform:uppercase;
-  color: #222;
-    display: flex;
-    font-size: 17px;
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: normal;
-    line-height: 1.41;
-    margin: 0;
-    padding: 12px 12px 15px;
-}
-nav.navbar.navbar-expand-lg.bg-categories {
-  border: 1px solid grey;
-}
-.bds-ban{
-  display: flex;
-}
-.bds1{
-  border: 1px solid rgb(199, 196, 196);
-  padding: 13px;
-}
-.bds1 img:hover{
-   transform: scale(1, 1.1);
-    transition: all 0.5s ease 0s;
-  object-fit: scale-down;
-}
-.logo-mayanh img{
-  position: relative;
-    left: 6px;
-    top: -265px;
-    width: 30px;
-    height: 30px;
-}
-.logo-mayanh a{
-  text-decoration: none;
+                    <div class="name-company">
+                        <img src="./public/img/name-company.png" alt="">
+                    </div>
+                    <div class="border-search">
+                        <div clasearch-forms="dropdown border-dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Loại BĐS
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            <span>Tìm theo đường hoặc quận</span>
+                            <form class="example" action="">
+                                <input type="text" placeholder="Tìm kiếm..." name="search2">
+                                <button type="submit"> <i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Khoảng giá
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Diện Tích
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul><button class="btn btn-secondary dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Địa Điểm
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul><button class="btn btn-secondary dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tình Trạng
+                            </button>
 
-}
-.logo-mayanh p{
-  font-size: 14px;
-  text-align: inherit;
-}
-.logo-mayanh a span{
-  color: white;
-      position: relative;
-    top: -263px;
-    left: -18px;
-    font-weight: 700;
-}
-.more-post{
-  background: #f9f9f9;
-  padding-top: 20px;
-  text-align: center;
-}
-.more-post a:hover{
-  background: #f9f9f9;
-  color: #d0021b;
-}
-.area {
-  font-size: 16px;
-  color: #9b9b9b;
-}
-.price {
-  font-weight: 700;
-  color: #d0021b;
-  font-size: 17px;
-}
-.more-post a{
-  padding: 15px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 17px;
-  color: #38699f;
-  border: 3px solid #38699f;
-}
-.address{
-  display: flex;
-  padding-top: 5px;
-  line-height: 25px;
-}
 
-/* Owl carousel */
+                        </div>
+                    </div>
+                </div>
+                <div class="service col-md-3">
+                    <div class="introduce">
+                        <a href="">
+                            <i class="fas fa-address-card"></i>Giới <br> Thiệu</a>
+                    </div>
+                    <div class="news">
+                        <a href=""><i class="far fa-newspaper"></i>Tin <br> Tức</a>
+                    </div>
+                    <div class="bank pt-3">
+                        <a href=""><i class="far fa-money-check-alt"></i>Bank</a>
+                    </div>
 
-.slider img{
-  object-fit: fill;
-  height: 600px;
-}
-.item a{
-  text-decoration: none;
-}
+                </div>
+            </div>
+        </div>
+    </div>
+</head>
 
-button.owl-next {
-  position: relative;
-  left: 45%;
-}
-button.owl-prev {
-  position: relative;
-  right: 45%;
-}
-.owl-theme .owl-nav {
-  position: relative;
-  top: -320px;
-}
+<!--  -->
+<div class="categories">
+    <nav class="navbar navbar-expand-lg bg-categories ">
+        <div class="container-fluid ">
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" id="trangchu">
+                                    <i class="fa-solid fa-house"></i> Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="mua-bds">
+                                    <i class="fa-solid fa-cart-shopping"></i> Mua bất động sản</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="ban-bds">
+                                    <i class="fa-brands fa-sellsy"></i> Bán bất động sản</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="thue-bds">
+                                    <i class="fa-solid fa-truck-moving"></i> Cho thuê bất động sản</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="duan">
+                                    <i class="fa-solid fa-list-check"></i> Dự án</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tuyendung">
+                                    <i class="fa-solid fa-user-plus"></i> Tuyển dụng</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="lienhe">
+                                    <i class="fa-solid fa-phone"></i> Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
 
-.owl-nav {
-  color: white;
-  font-size: 35px;
-}
-.owl-nav button{
-  padding: 10px;
-  
-}
-/* move-top */
-.move {
-  position: fixed;
-  bottom: 20px;
-  right: 40px;
-}
-.move img
-{
-  background-color: white;
-  border-radius: 30px;
-  width: 50px;
-  height: 50px;
-}
-.fa-angle-left:before{
-  content: "\f104";
-  padding: 10px;
-  border-radius: 50%;
-}
-.fa-angle-right:before{
-  content: "\f105";
-  padding: 10px;
-  border-radius: 50%;
-}
-/* srcoll */
+<!-- slide show -->
+<div class="slide-home owl-carousel owl-theme owl2">
+    <div class="item">
+        <div class="slider">
+            <a href="">
+                <img src="./public/img/slide1.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="slider">
+            <a href=""><img src="./public/img/slide2.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="slider">
+            <a href=""><img src="./public/img/slide3.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
 
-.internet {
-  position: fixed;
-  top: 80%;
-  left: 50px;
-}
-.internet img{
-  width: 60px;
-  height: 60px;
-}
-/* footer */
-footer {
-  background: url('../img/footer.png') bottom no-repeat;
-  color: white;
-  font-weight: 700;
-  font-size: 17px;  
- } 
-.copyright{
-  color: white;
-  background: #00a850;
-}
-.contact {
-  display: flex;
-}
-footer .name-company img{
-  padding: 0;
-  left: 40px;
-  bottom: 10px;
-  width: 201px;
-  height: 175px;
-  position: relative;
-}
-.policy li{
-  list-style: none;
-  line-height: 35px;
-}
-.policy a{
-  color: white;
-  text-decoration: none;
-}
+<div class="internet">
+    <div class="fb-srcoll">
+        <a href=""> <img src="./public/img/logo-fb.png" class="img-fluid"></a>
+    </div>
+    <div class="tele-srcoll">
+        <a href=""> <img src="./public/img/logo-telephone.png" alt="" class="img-fluid"></a>
+    </div>
+    <div class="zalo-srcoll">
+        <a href=""> <img src="./public/img/logo-zalo.png" class="img-fluid"></a>
+    </div>
 
-.policy h1{
-  padding-left: 30px;
-}
-.policy a:hover{
-  color: #ffce2b;
-}
+</div>
+<!-- BDS bán  -->
+<div class="sell-bds">
+    <div class="container">
+        <div class="bds">
+            <div class="row">
+                <h1> Bất Động Sản Bán </h1>
+                <div class="bds-ban">
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
 
-footer ul{
-  padding-top: 30px;
-  line-height: 22px;
-}
-.link1 img {
-  padding: 30px 30px 30px 0; 
-}
+                </div>
+
+            </div>
+            <div class="more-post pb-5 pt-5">
+                <a href="">Xem thêm tin khác <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BDS mua -->
+<div class="sell-bds pt-5">
+    <div class="container">
+        <div class="bds">
+            <div class="row">
+                <h1> Bất Động Sản Mua </h1>
+                <div class="bds-ban">
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bds1 col-md">
+                        <img src="./public/img/bds-sell.png" alt="" class="img-fluid">
+                        <div class="address"> Bản nhà Hoàng Hoa Thám via
+                            hè ô tô tránh 6 tỷ</div>
+                        <div class="area">30 m2-4 PN</div>
+                        <div class="price">6 tỷ</div>
+                        <div class="logo-mayanh">
+                            <a href="">
+                                <img src="./public/img/logo-mayanh.png" alt="">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-post pb-5 pt-5">
+                    <a href="">Xem thêm tin khác <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="address">
+                <div class="contact col-md-4 ">
+                    <div class="img-logo">
+                        <div class="name-company">
+                            <a href="">
+                                <img src="./public/img/name-logo.png" alt="">
+                            </a>
+                        </div>
+                        <p>Địa chỉ: Thành Phố Hồ Chí Minh <br> Thành Phố Hồ Chí
+                            Minh</p>
+                        <p>Điện thoại: 0123 456 789 - 0123 456 789</p>
+                        <p>Email: quocdolandnhadat@gmai.com</p>
+                        <p>Website:www.quocdoland.net</p>
+                    </div>
+                </div>
+                <div class="policy col-md-4">
+                    <h1>Chính Sách</h1>
+                    <ul>
+                        <li><a href="">Chính sách bảo mật </a></li>
+                        <li><a href="">Chính sách thi công</a></li>
+                        <li><a href="">Thiết kế công trình</a></li>
+                        <li><a href="">Chính sách vận chuyển</a></li>
+                        <li><a href="">Sản phẩm nội thất</a></li>
+                        <li><a href="">Chính sách thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="facebook col-md-4">
+                    <h1>Kết nối với chúng tôi</h1>
+                    <div class="link1">
+                        <a href=""><img src="./public/img/logo-fb-sm.png" alt=""></a>
+                        <a href=""><img src="./public/img/log-gmail-sm.png" alt=""></a>
+                        <a href=""><img src="./public/img/logo-tw-sm.png" alt=""></a>        
+                        <a href=""><img src="./public/img/logo-pr-sm.png" alt=""></a>
+                    </div>
+                    <p>
+                        2022 Copyright &copy; . All right Reserved. Design by Sota Group
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- move-top -->
+<div class="move">
+    <a href="#move_top"> <img src="./public/img/move-top.png" alt=""></a>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./public/js/owl.carousel.min.js"></script>
+
+
+<script>
+    //slide
+    $('.slide-home').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>
+
+<body>
+
+</body>
+
+</html>
