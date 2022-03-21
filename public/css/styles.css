@@ -4,13 +4,15 @@ body {
 	margin: -25px auto !important; 
 	float: none !important; 
 }
-.top-header{
-  background-color: white ;
 
+.top-header{
+  background: white url(../img/bg-header.png) center no-repeat;
 }
 .logo img{
-       width: 235px;
-    height: 210px;
+  top: 22px;
+  width: 235px;
+  height: 210px;
+  position: relative;
 }
 .top-header{
     padding-bottom: 35px;
@@ -83,13 +85,13 @@ input[type="text"]{
 }
 
 .introduce, .bank, .news {
+  position: relative;
+  top: 68px;
   border: 2px solid grey;
   padding: 0 10px;
   margin: 52px 11px 120px 5px;
 }
-.service a{
-  text-transform:uppercase;
-}
+
 /* categories */
 .bg-categories a{
   color: black;
@@ -108,7 +110,7 @@ a.nav-link.active,a.nav-link {
 /* Bds ban */
 
 .sell-bds .container{
-  background: white;
+  background: #f9f9f9;
 }
 .sell-bds h1{
   text-transform:uppercase;
@@ -133,9 +135,10 @@ nav.navbar.navbar-expand-lg.bg-categories {
   border: 1px solid rgb(199, 196, 196);
   padding: 13px;
 }
-.bds1:hover{
-  transform: scale(1, 1.1);
+.bds1 img:hover{
+   transform: scale(1, 1.1);
     transition: all 0.5s ease 0s;
+  object-fit: scale-down;
 }
 .logo-mayanh img{
   position: relative;
@@ -160,8 +163,13 @@ nav.navbar.navbar-expand-lg.bg-categories {
     font-weight: 700;
 }
 .more-post{
+  background: #f9f9f9;
   padding-top: 20px;
   text-align: center;
+}
+.more-post a:hover{
+  background: #f9f9f9;
+  color: #d0021b;
 }
 .area {
   font-size: 16px;
@@ -240,22 +248,13 @@ button.owl-prev {
   border-radius: 50%;
 }
 /* srcoll */
-.left-srcoll{
-  position: fixed;
-  top: 50%;
-  left: 30px;
-}
-.left-srcoll img{
-  width: 200px;
-  height: 130px;
-}
-.right-srcoll{
-  position: fixed;
-  top: 50%;
-  right: 30px;
-}
-.right-srcoll img{
-  width: 200px;
-  height: 140px;
-}
 
+.contact {
+  position: fixed;
+  top: 80%;
+  left: 50px;
+}
+.contact img{
+  width: 60px;
+  height: 60px;
+}
